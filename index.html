@@ -6,162 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Gurukul</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* Full-width input fields */
-        input[type=text],
-        input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #f7dc99;
-            box-sizing: border-box;
-        }
-
-        /* Set a style for all buttons */
-        button {
-            background-color: #04AA6D;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-        }
-
-        button:hover {
-            opacity: 0.8;
-        }
-
-        /* Extra styles for the cancel button */
-        .cancelbtn {
-            width: auto;
-            padding: 10px 18px;
-            background-color: #f44336;
-        }
-
-        /* Center the image and position the close button */
-        .imgcontainer {
-            text-align: center;
-            margin: 24px 0 12px 0;
-            position: relative;
-        }
-
-        img.avatar {
-            width: auto;
-            padding: 20px;
-            border-radius: 50%;
-        }
-
-        .container {
-            padding: 16px;
-            width: 300px;
-        }
-
-        span.psw {
-            float: right;
-            padding-top: 16px;
-        }
-
-        /* The Modal (background) */
-        .modal {
-            display: none;
-            /* Hidden by default */
-            position: fixed;
-            /* Stay in place */
-            z-index: 1;
-            /* Sit on top */
-            left: 25%;                                                    /*change!!!!*/
-            top: 0;
-            width: 50%;                                                  /*change!!!!*/
-            /* Half width */
-            height: 100%;
-            /* Full height */
-            overflow: auto;
-            /* Enable scroll if needed */
-            background-color: rgb(16, 16, 16);
-            /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.4);
-            /* Black w/ opacity */
-            padding-top: 60px;
-        }
-
-        /* Modal Content/Box */
-        .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto 15% auto;
-            /* 5% from the top, 15% from the bottom and centered */
-            border: 1px solid #888;
-            /* width: 80%; Could be more or less, depending on screen size */
-        }
-
-        /* The Close Button (x) */
-        .close {
-            position: absolute;                             /*change!!!*/
-            right: 25px;
-            top: 0;
-            color: #000;
-            font-size: 35px;
-            font-weight: bold;
-        }
-
-        .close:hover,
-        .close:focus {
-            color: red;
-            cursor: pointer;
-        }
-
-        /* Add Zoom Animation */
-        .animate {
-            -webkit-animation: animatezoom 0.6s;
-            animation: animatezoom 0.6s
-        }
-
-        @-webkit-keyframes animatezoom {
-            from {
-                -webkit-transform: scale(0)
-            }
-
-            to {
-                -webkit-transform: scale(1)
-            }
-        }
-
-        @keyframes animatezoom {
-            from {
-                transform: scale(0)
-            }
-
-            to {
-                transform: scale(1)
-            }
-        }
-
-        /* Change styles for span and cancel button on extra small screens */
-        @media screen and (max-width: 300px) {
-            span.psw {
-                display: block;
-                float: none;
-            }
-
-            .cancelbtn {
-                width: 100%;
-            }
-        }
-        .reg{
-             text-align: center;
-             border: 2px solid #000;
-             border-width: 10px;
-             border-radius: 25px;
-             background-color: #000;
-             color: snow;
-           
-        }
-    </style>
 </head>
 <style>
     /* header css */
@@ -225,7 +69,14 @@
         text-decoration: overline;
 
     }
-
+    .reg{
+             text-align: center;
+             border: 2px solid #000;
+             border-width: 10px;
+             border-radius: 25px;
+             background-color: #000;
+             color: snow;           
+        }
 
 
 
@@ -284,43 +135,9 @@
                 <p class="text-sm mt-2 text-gray-500 mb-8 w-full">Neutra shabby chic ramps, viral fixie.</p>
                 <div class="h-56 grid grid-cols-2 gap-1 content-around ...">
                     <div class="h-56 grid grid-cols-2 gap-1 content-around ...">
-                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b
-                                class="log">Login</b></button>
-
-                        <div id="id01" class="modal">
-
-                            <form class="modal-content animate" action="/action_page.php" method="post">
-                                <div class="beuty">
-
-                                    <div class="imgcontainer">
-                                        <span onclick="document.getElementById('id01').style.display='none'"
-                                            class="close" title="Close Modal">&times;</span>
-                                        <img src="avatar.png" alt="Avatar" class="avatar">
-                                    </div>
-
-                                    <div class="container">
-                                        <label for="uname"><b>Username</b></label>
-                                        <input type="text" placeholder="Enter Username" name="uname" required>
-
-                                        <label for="psw"><b>Password</b></label>
-                                        <input type="password" placeholder="Enter Password" name="psw" required>
-
-                                        <button type="submit">Login</button>
-                                        <label>
-                                            <input type="checkbox" checked="checked" name="remember"> Remember me
-                                        </label>
-                                    </div>
-
-                                    <div class="container" style="background-color:#f1f1f1">
-                                        <button type="button"
-                                            onclick="document.getElementById('id01').style.display='none'"
-                                            class="cancelbtn">Cancel</button>
-                                        <span class="psw">Forgot <a href="#">password?</a></span>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+<!-- ADDED BY BIPASHA --> <a href="login.html"><button><b id="id101" class="log">Login</b></button></a>
                     </div>
+<!-- REMOVED BY BIPASHA -->
                     <!-- <div class="flex lg:flex-row md:flex-col">
                     <button
                         class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
@@ -352,42 +169,9 @@
                         </span>
                     </button>
                 </div> -->
-                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b
+<!-- REMOVED BY BIPASHA -->
+<!-- CHANGES WILL BE MADE BY BIPASHA --> <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><b
                             class="reg">Register</b></button>
-
-                    <div id="id01" class="modal">
-                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                            title="Close Modal">&times;</span>
-                        <form class="modal-content" action="/action_page.php">
-                            <div class="container">
-                                <h1>Sign Up</h1>
-                                <p>Please fill in this form to create an account.</p>
-                                <hr>
-                                <label for="email"><b>Email</b></label>
-                                <input type="text" placeholder="Enter Email" name="email" required>
-
-                                <label for="psw"><b>Password</b></label>
-                                <input type="password" placeholder="Enter Password" name="psw" required>
-
-                                <label for="psw-repeat"><b>Repeat Password</b></label>
-                                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-                                <label>
-                                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">
-                                    Remember me
-                                </label>
-
-                                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms &
-                                        Privacy</a>.</p>
-
-                                <div class="clearfix">
-                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                                        class="cancelbtn">Cancel</button>
-                                    <button type="submit" class="signupbtn">Sign Up</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
                 </div>
             </div>
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
@@ -471,6 +255,7 @@
         </div>
         <div class="bg-gray-100">
             <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+<!-- REMOVED BY BIPASHA -->
                 <!-- <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
                         stroke-linejoin="round" stroke-width="2"
@@ -483,10 +268,12 @@
                     <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1"
                         target="_blank">@knyttneve</a>
                 </p> -->
+<!-- REMOVED BY BIPASHA -->
+<!-- ADDED BY BIPASHA -->
                 <svg width="151" height="27" viewBox="0 0 151 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13.105 26.525C10.515 26.525 8.275 26.07 6.385 25.16C4.51833 24.2267 3.08333 22.8967 2.08 21.17C1.07667 19.4433 0.575 17.39 0.575 15.01C0.575 12.5133 1.1 10.3083 2.15 8.395C3.22333 6.48167 4.71667 5 6.63 3.95C8.56667 2.9 10.795 2.375 13.315 2.375C14.7617 2.375 16.1267 2.53833 17.41 2.865C18.7167 3.19167 19.8717 3.65833 20.875 4.265L19.65 8.465C18.74 7.905 17.725 7.47333 16.605 7.17C15.485 6.84333 14.3883 6.68 13.315 6.68C11.775 6.68 10.41 7.01833 9.22 7.695C8.05333 8.34833 7.14333 9.28167 6.49 10.495C5.86 11.685 5.545 13.0733 5.545 14.66C5.545 16.9933 6.245 18.8367 7.645 20.19C9.06833 21.52 11.005 22.185 13.455 22.185C14.435 22.185 15.345 22.115 16.185 21.975V17.145H13.245V13.05H20.84V25.16C18.4367 26.07 15.8583 26.525 13.105 26.525ZM31.3567 26.49C29.4433 26.49 27.9383 25.9067 26.8417 24.74C25.745 23.5733 25.1967 21.975 25.1967 19.945V7.975H30.1317V19.14C30.1317 20.0967 30.365 20.8433 30.8317 21.38C31.2983 21.8933 31.9283 22.15 32.7217 22.15C33.515 22.15 34.2733 21.8933 34.9967 21.38C35.7433 20.8667 36.3617 20.1783 36.8517 19.315V7.975H41.7867V26H36.8517V23.62C36.175 24.53 35.3933 25.2417 34.5067 25.755C33.6433 26.245 32.5933 26.49 31.3567 26.49ZM46.4288 7.975H51.3638V10.915H51.6438C52.3205 9.725 52.9855 8.85 53.6388 8.29C54.3155 7.73 55.1555 7.45 56.1588 7.45C56.5788 7.45 56.9288 7.49667 57.2088 7.59L56.6838 12.91C56.0772 12.7467 55.5872 12.665 55.2138 12.665C54.6772 12.665 54.1988 12.77 53.7788 12.98C53.3822 13.19 53.0205 13.47 52.6938 13.82C52.3905 14.17 51.9472 14.7067 51.3638 15.43V26H46.4288V7.975ZM66.2883 26.49C64.375 26.49 62.87 25.9067 61.7733 24.74C60.6767 23.5733 60.1283 21.975 60.1283 19.945V7.975H65.0633V19.14C65.0633 20.0967 65.2967 20.8433 65.7633 21.38C66.23 21.8933 66.86 22.15 67.6533 22.15C68.4467 22.15 69.205 21.8933 69.9283 21.38C70.675 20.8667 71.2933 20.1783 71.7833 19.315V7.975H76.7183V26H71.7833V23.62C71.1067 24.53 70.325 25.2417 69.4383 25.755C68.575 26.245 67.525 26.49 66.2883 26.49ZM81.4305 2.69H86.5055V11.72L94.1005 2.69H100.155L90.5655 13.75L99.6655 26H93.5055L86.5055 16.585V26H81.4305V2.69ZM107.543 26.49C105.63 26.49 104.125 25.9067 103.028 24.74C101.932 23.5733 101.383 21.975 101.383 19.945V7.975H106.318V19.14C106.318 20.0967 106.552 20.8433 107.018 21.38C107.485 21.8933 108.115 22.15 108.908 22.15C109.702 22.15 110.46 21.8933 111.183 21.38C111.93 20.8667 112.548 20.1783 113.038 19.315V7.975H117.973V26H113.038V23.62C112.362 24.53 111.58 25.2417 110.693 25.755C109.83 26.245 108.78 26.49 107.543 26.49ZM121.705 21.765H124.89V4.65H121.88V0.449999H129.825V21.765H133.01V26H121.705V21.765ZM141.055 26.525C139.189 26.525 137.707 25.7317 136.61 24.145C135.514 22.5583 134.965 20.4 134.965 17.67C134.965 14.3567 135.805 11.8367 137.485 10.11C139.165 8.36 141.58 7.485 144.73 7.485C146.504 7.485 148.58 7.765 150.96 8.325V26H146.27L146.375 23.13H146.235C145.629 24.2267 144.882 25.0667 143.995 25.65C143.132 26.2333 142.152 26.525 141.055 26.525ZM142.105 22.22C142.829 22.22 143.54 21.835 144.24 21.065C144.94 20.295 145.594 19.2683 146.2 17.985V12.105C145.454 11.895 144.707 11.79 143.96 11.79C142.56 11.79 141.499 12.2683 140.775 13.225C140.075 14.1817 139.725 15.5933 139.725 17.46C139.725 18.93 139.935 20.0967 140.355 20.96C140.775 21.8 141.359 22.22 142.105 22.22Z" fill="#263238"/>
                     </svg>
-                    
+<!-- ADDED BY BIPASHA -->                    
                 <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                     <a class="text-gray-500">
                         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -522,17 +309,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
 </body>
 
 </html>
