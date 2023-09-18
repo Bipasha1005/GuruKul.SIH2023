@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 #bg {
-  background-image: url('bg.jpg');
+  /* background-image: url('bg.jpg'); */
   position: absolute;
   left: 0;
   top: 0;
@@ -34,6 +34,7 @@ top: 137px; */
 
 
 body {
+  background-color: #FFECC5;
   font-family: 'Lato', sans-serif;
   color: #4A4A4A;
   display: flex;
